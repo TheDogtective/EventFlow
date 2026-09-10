@@ -7,8 +7,8 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview --host",
-    "test": "vitest",
-    "test:run": "vitest run",
+    "test": "vitest --reporter=tree",
+    "test:run": "vitest run --reporter=tree",
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {

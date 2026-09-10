@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { dayMonth } from "../../api";
-import Logo from "./Logo";
+import Logo from "../Logo/Logo";
 
 export default function EventCard({ ev }) {
   const dm = dayMonth(ev.starts_at);
