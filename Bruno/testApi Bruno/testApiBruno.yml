@@ -1,0 +1,22 @@
+info:
+  name: testApiBruno
+  type: http
+
+http:
+  method: GET
+  url: https://dummyjson.com/test
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: before-request
+      code: |-
+        fetch('https://dummyjson.com/test')
+        .then(res => res.json())
+        .then(console.log);
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

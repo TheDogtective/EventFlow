@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { dayMonth } from "../api";
+import { dayMonth } from "../../api";
 import Logo from "./Logo";
 
 export default function EventCard({ ev }) {

@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router";
 import Logo from "./Logo";
 import Avatar from "./Avatar";
-import { useAuth } from "../auth";
+import { useAuth } from "../../auth";
 
 export default function NavBar() {
   const { user, logout } = useAuth();
